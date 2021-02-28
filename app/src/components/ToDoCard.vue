@@ -1,16 +1,18 @@
 <template>
-  <div class="item-card">
+  <div class="item-card container">
     <div class="columns">
       <div class="column is-three-quarters has-text-left">
         <BField class="checkbox-field">
           <BCheckbox v-model="done" @input="toggleDone">{{
             content
           }}</BCheckbox>
+        
         </BField>
+       <div class="edit">
+           <BButton  outlined @click="editItem">Edit</BButton>
+          </div>
       </div>
-      <div class="column is-hidden-mobile">
-        <BButton outlined @click="editItem">Edit</BButton>
-      </div>
+    
     </div>
   </div>
 </template>
@@ -18,7 +20,7 @@
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
 import gql from "graphql-tag";
-
+// added mobile responsive styles at the bottom of the code
 @Component
 export default class ToDoCard extends Vue {
   @Prop({ required: true }) item: any;
@@ -80,8 +82,24 @@ export default class ToDoCard extends Vue {
   }
 }
 </script>
+
 <style lang="scss" scoped>
-.checkbox-field {
+.column {
   line-height: 2.5rem;
+  background: #fff;
+  padding: 8px 18px;
+  margin: 20px;
+  justify-content: space-between;
+  border: 2px solid black;
+  box-shadow: 1px 2px 10px #eee;
+  display: flex;
+  text-align: center;
+}
+button.edit {
+
+align-self: flex-end
+}
+.checkbox-field {
+  text-align: center;
 }
 </style>
