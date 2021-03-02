@@ -1,34 +1,15 @@
-```
--- The aim of the project is to solve customers problem, So the front we used is the,
+ # Project Tickets
 
- `` Vue js with Type Script
+  ## CORONA TRACKER
 
- Backend of this projects in done by;
-
-1. C# and .NET 5
-2. HotChocolate, a .NET GraphQL framework
-3. Entity Framework for DB access
+-Making a front-end by using view js and typescript to function for the Details to appear.
+- need to use API of world corona tracker and then loop through that json data to get the correct information.
+That is ,
+Acceptance criteria is,
+1. I need to able see all the details of the corona in World, country and in my Statke
+2. My state will be the first component.
+3. We need to use an API to fetch the data to know the value of corona severity in particular state, country, world according to our search.
+4. I need to able give the severity with different colored boxes and ie, death : red, severe: orange, recovered: green etc.
  
-# PROJECT TICKETS
--- 
+   
 
-## ASSUMPTIONS
-
-   1. Users only want to add by date
-   2. 
-
-## Ticket - Add an Order button to the Items List page
-Allow the user to toggle through different ordering strategies.
-Acceptance criteria:
-1. Default will be latest first
-1. Second option will be oldest first
-1. On toggling the option, the query will be re-ran with the API specifying the newest sort order.
-1. The loading spinner should be shown while the API interaction is taking place.
-
-## Setting up the project 
-    
-
-
-
-
-```
